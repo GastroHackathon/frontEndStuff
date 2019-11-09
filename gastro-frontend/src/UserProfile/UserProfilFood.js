@@ -15,7 +15,9 @@ class UserProfileFood extends React.Component {
     }
 
     createItems(data) {
-        // return data.map(this.createItem);
+        if(data) {
+            return data.map(this.createItem);
+        }
     }
 
     createItem(item) {

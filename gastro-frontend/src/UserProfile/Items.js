@@ -11,11 +11,11 @@ class Items extends React.Component {
 
     constructor(props) {
         super(props);
-        this.data = {};
+        this.state = {};
     }
 
     componentDidMount() {
-        this.data = Controller.getProfileGeneral(this.props.art)
+        Controller.getProfileGeneral(this.props.art).then(data => this.setState(data))
     }
 
     getHeader() {
@@ -36,7 +36,11 @@ class Items extends React.Component {
     }
 
     createItems(data) {
-        //return data.map(this.createItem);
+        if (data) {
+            console.log(data)
+            return data.map(this.createItem);
+        }
+
     }
 
     createItem(item) {
@@ -52,7 +56,7 @@ class Items extends React.Component {
             <div className="card">
                 <div className="card-body">
                     {this.getHeader()}
-                    {this.createItems(this.data)}
+                    {this.createItems(this.state)}
                 </div>
             </div>
         )

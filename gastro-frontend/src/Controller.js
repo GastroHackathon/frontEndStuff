@@ -45,8 +45,12 @@ class _Controller {
         }).then(res => true);
     }
 
-    getQuestion() {
-        return axios.get(this.questionUrl).then(res => res.body);
+    getQuestion(cnt) {
+        return axios.get(this.questionUrl, {
+            params: {
+                cnt: cnt
+            }
+        }).then(res => res.body);
     }
 
     postQuestion(id, answerId) {
