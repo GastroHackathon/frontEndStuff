@@ -6,9 +6,16 @@ import MainComponent from './MainComponent.js'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <MainComponent></MainComponent>
-      </header>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div className='container'>
+        <div className="col-6 offset-3">
+          <div className="jumbotron">
+            <MainComponent></MainComponent>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

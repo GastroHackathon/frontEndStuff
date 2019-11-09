@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import MainComponentStore from './Stores/MainComponentStore';
+import QuestionStore from './Stores/QuestionStore'
 import {Provider} from "mobx-react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const stores = {
-    MainComponentStore
+    MainComponentStore,
+    QuestionStore
 };
 
 

@@ -3,6 +3,9 @@ import { inject, observer } from "mobx-react";
 import MainComponentStore from "./Stores/MainComponentStore"
 import UserProfileGeneral from './UserProfile/UserProfileGeneral';
 import UserProfileFood from './UserProfile/UserProfilFood';
+import Interragation from './Interrogation/Interragation';
+import Results from './Results/Results';
+import Restaurant from './Restaurant/Restaurant';
 
 
 @inject('MainComponentStore')
@@ -26,10 +29,18 @@ class MainComponent extends React.Component {
                 display = <UserProfileFood></UserProfileFood>
                 break;
             case 3:
-                display = <UserProfileFood></UserProfileFood>
+                display = <Interragation></Interragation>
+                break;
+            case 4:
+                display = <Results></Results>
+                break;
+            case 5:
+                display = <Restaurant></Restaurant>
                 break;
             default:
-          }
+                display = <UserProfileGeneral></UserProfileGeneral>
+                MainComponentStore.setPage(1);
+        }
 
         return (
             <div>

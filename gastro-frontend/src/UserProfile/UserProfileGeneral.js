@@ -1,7 +1,5 @@
 import React from "react";
-import ILove from "./GeneralComponents/ILove";
-import IHate from "./GeneralComponents/IHate";
-import ICant from "./GeneralComponents/iCant";
+import Items from "./Items";
 import { inject } from "mobx-react";
 
 @inject('MainComponentStore')
@@ -16,10 +14,13 @@ class UserProfileGeneral extends React.Component {
 
         return (
             <div>
-                <ILove></ILove>
-                <IHate></IHate>
-                <ICant></ICant>
-                <button className='btn-primary' onClick={() => MainComponentStore.setPage(1)}>Continue</button>
+                <Items name="ILove"></Items>
+                <Items name="IHate"></Items>
+                <Items name="ICant"></Items>
+                <br></br>
+                <br></br>
+                <br></br>
+                <button className='btn btn-primary btn-lg' onClick={() => MainComponentStore.nextPage()}>Continue</button>
             </div>
         )
     }

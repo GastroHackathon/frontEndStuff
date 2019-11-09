@@ -2,14 +2,14 @@ import {action, observable} from "mobx";
 
 
 class MainComponentStore {
-    @observable page = 1
+    @observable page = 1;
     
-    constructor() {
-
+    @action setPage(newPage) {
+        this.page = newPage;
     }
 
-    @action setpage(newPage) {
-        this.page = newPage;
+    @action nextPage() {
+        this.page += 1
     }
 }
 
