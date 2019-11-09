@@ -38,10 +38,10 @@ class _Controller {
         return axios.get(this.profileFoodUrl).then(res => res.body);
     }
 
-    postProfileFood(id, art) {
+    postProfileFood(id, fav) {
         return axios.post(this.profileFoodUrl, {
             id: id,
-            art: art
+            fav: fav
         }).then(res => true);
     }
 

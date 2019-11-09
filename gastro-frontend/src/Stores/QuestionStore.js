@@ -1,14 +1,12 @@
 import {action, observable} from "mobx";
+import Controller from '../Controller';
 
 
 class QuestionStore {
-    @observable data = {
-        id: 1
-    }
+    @observable data;
     
     @action next() {
-        this.data.id += 1
-        this.data.continue = this.data.id >= 3 ? true : false;
+        this.data = Controller.getQuestion()
     }
 }
 

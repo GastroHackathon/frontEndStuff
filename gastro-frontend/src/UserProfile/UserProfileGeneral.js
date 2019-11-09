@@ -14,9 +14,9 @@ class UserProfileGeneral extends React.Component {
 
         return (
             <div>
-                <Items name="ILove"></Items>
-                <Items name="IHate"></Items>
-                <Items name="ICant"></Items>
+                <Items art="ILove"></Items>
+                <Items art="IHate"></Items>
+                <Items art="ICant"></Items>
                 <br></br>
                 <br></br>
                 <br></br>
