@@ -9,10 +9,9 @@ class Results extends React.Component {
     constructor(props) {
         super(props);
     }
+
     submit(id) {
         const { MainComponentStore } = this.props;
-       
-
     }
 
     createItems(data) {
@@ -20,8 +19,6 @@ class Results extends React.Component {
     }
 
     createItem(item) {
-        const { MainComponentStore } = this.props;
-
         return (
             <div>
                 <div className="card">
