@@ -2,10 +2,10 @@ import React from "react";
 import Controller from '../Controller'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHamburger, faPizzaSlice, faFish, faCarrot, faSeedling, faBreadSlice, faBlender } from '@fortawesome/free-solid-svg-icons'
+import { faHamburger, faPizzaSlice, faFish, faCarrot, faSeedling, faBreadSlice, faBlender, faEgg, faBacon } from '@fortawesome/free-solid-svg-icons'
 import { inject, observer } from "mobx-react";
 
-library.add(faHamburger, faPizzaSlice, faFish, faCarrot, faSeedling, faBreadSlice, faBlender);
+library.add(faHamburger, faPizzaSlice, faFish, faCarrot, faSeedling, faBreadSlice, faBlender, faEgg, faBacon);
 
 @inject('UserProfileStore')
 @observer
@@ -40,8 +40,9 @@ class Items extends React.Component {
 
     createItem(item) {
         return (
-            <div key={item.id} onClick={() => Controller.postProfileGeneral(item.id, item.art)} style={{ display: 'inline-block', padding: '2em' }}>
+            <div key={item.id} onClick={() => Controller.postProfileGeneral(item.id, item.art)} style={{ display: 'inline-block', padding: '0.7em', 'font-size': '42px'}}>
                 <FontAwesomeIcon icon={item.name} />
+                
             </div>
         )
     }
