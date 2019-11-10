@@ -25,7 +25,7 @@ class Results extends React.Component {
                     <div className="card-body">
                         <h5 clasName="card-title">{item.name}</h5>
                         <p className="card-text">{item.allergens.join(" ")}</p>
-                        <a href="#" className="btn btn-primary">Restaurant</a>
+                        <a href="#" className="btn btn-primary">{item.available_in.data[0].name}</a>
                     </div>
                 </div>
             </div>
