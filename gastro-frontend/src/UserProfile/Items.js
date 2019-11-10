@@ -2,10 +2,10 @@ import React from "react";
 import Controller from '../Controller'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHamburger, faPizzaSlice, faFish, faCarrot, faSeedling, faBreadSlice, faBlender, faEgg, faBacon } from '@fortawesome/free-solid-svg-icons'
+import { faHamburger, faPizzaSlice, faFish, faCarrot, faSeedling, faBreadSlice, faBlender, faEgg, faBacon, faPepperHot } from '@fortawesome/free-solid-svg-icons'
 import { inject, observer } from "mobx-react";
 
-library.add(faHamburger, faPizzaSlice, faFish, faCarrot, faSeedling, faBreadSlice, faBlender, faEgg, faBacon);
+library.add(faHamburger, faPizzaSlice, faFish, faCarrot, faSeedling, faBreadSlice, faBlender, faEgg, faBacon, faPepperHot);
 
 @inject('UserProfileStore')
 @observer
@@ -52,7 +52,7 @@ class Items extends React.Component {
 
 
         return (
-            <div>
+            <div style={{"fontFamily" : "Brush Script MT"}}>
                 <div className="card">
                     <div className="card-body">
                         <h1>I love</h1>
