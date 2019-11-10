@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46b4120a-27d8-427c-949e-9ee6e034dd70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/10_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/1_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/2_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/4_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/5_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/6_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/7_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/8_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/9_heart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stores/ImageStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserProfile/UserProfileFood.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserProfile/UserProfilFood.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserProfile/UserProfilFood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserProfile/UserProfilFood.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            <state relative-caret-position="161">
+              <caret line="47" column="76" selection-start-line="47" selection-start-column="76" selection-end-line="47" selection-end-column="76" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -259,7 +245,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3499000" />
+    <option name="totallyTimeSpent" value="5378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
@@ -412,8 +398,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserProfile/UserProfilFood.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        <state relative-caret-position="161">
+          <caret line="47" column="76" selection-start-line="47" selection-start-column="76" selection-end-line="47" selection-end-column="76" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

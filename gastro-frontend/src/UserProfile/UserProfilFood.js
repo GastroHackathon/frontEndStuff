@@ -45,14 +45,8 @@ class UserProfileFood extends React.Component {
         }
 
         return (
-            <div className="card" key={item.id}>
-                <img className="card-img-top" src={source} alt="Card image cap" onClick={
-                    () => this.sendResponse(item.id)}></img>
-                <div className="card-body">
-                    <a className="btn btn-primary" onClick={() => Controller.postProfileFood(item.id, true)}>Yes</a>
-                    <a className="btn btn-danger" onClick={() => Controller.postProfileFood(item.id, false)}>No</a>
-                </div>
-            </div>
+            <img className="card-img-top col-6 my-2 rounded border-secondary" src={source} alt="Card image cap" onClick={
+                () => this.sendResponse(item.id)}></img>
         )
     }
 
@@ -62,8 +56,11 @@ class UserProfileFood extends React.Component {
 
         return (
             <div>
-                {this.createItems(UserProfileStore.food)}
-                <button className='btn-primary' onClick={() => MainComponentStore.nextPage()}>Continue</button>
+                <div className="row align-items-center border">
+                    {this.createItems(UserProfileStore.food)}
+                </div>
+                <br></br>
+                <button className='btn-primary btn align-self-center' onClick={() => MainComponentStore.nextPage()}>Continue</button>
             </div>
         )
     }
