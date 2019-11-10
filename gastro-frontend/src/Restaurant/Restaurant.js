@@ -1,7 +1,9 @@
 import React from "react";
-import { inject } from "mobx-react";
+import { inject, observer } from "mobx-react";
 
 @inject('MainComponentStore')
+@inject('QuestionStore')
+@observer
 class Restaurant extends React.Component {
 
     constructor(props) {

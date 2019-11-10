@@ -10,7 +10,7 @@ function App() {
       <br></br>
       <br></br>
       <div className='container'>
-        <div className="col-6 offset-3">
+        <div className="col-8 offset-2">
           <div className="jumbotron">
             <MainComponent></MainComponent>
           </div>

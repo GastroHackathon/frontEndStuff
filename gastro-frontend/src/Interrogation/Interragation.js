@@ -11,34 +11,39 @@ class Interragation extends React.Component {
         super(props);
     }
 
-    continue() {
+    send(answerId) {
+        const { QuestionStore } = this.props;
+
+        Controller.postQuestion(QuestionStore.id, answerId);
+        QuestionStore.next()
+
+    }
+
+    render() {
         const { MainComponentStore } = this.props;
         const { QuestionStore } = this.props;
 
-        if (!QuestionStore.data.continue) {
+        console.log(QuestionStore.id)
+        if (!QuestionStore.id) {
             QuestionStore.next()
-        } else {
+            return null
+        }
+        console.log(QuestionStore.continue)
+        if (!QuestionStore.continue) {
             MainComponentStore.nextPage()
         }
-    }
-    
-    render() {
-        const { QuestionStore } = this.props;
-        if(!QuestionStore.data) {
-            QuestionStore.next()
-        }
 
+        console.log(QuestionStore.id)
         return (
             <div>
-                <h1>Question : {QuestionStore.data.id} </h1>
-                <div className="card" style="width: 18rem;">
-                <div className="card-body">
-                    <p>{QuestionStore.data.question}</p>
-                    <a className="btn btn-light" onClick={() => Controller.postProfileFood(QuestionStore.data.id, 1)}>{QuestionStore.data.answer[0]}</a>
-                    <a className="btn btn-light" onClick={() => Controller.postProfileFood(QuestionStore.data.id, 1)}>{QuestionStore.data.answer[1]}</a>
+                <h1>Question : {QuestionStore.id} </h1>
+                <div className="card" >
+                    <div className="card-body">
+                        <p>{QuestionStore.question}</p>
+                        <a className="btn btn-light" onClick={() => this.send(0)}>{QuestionStore.answer[0]}</a>
+                        <a className="btn btn-light" onClick={() => this.send(0)}>{QuestionStore.answer[1]}</a>
+                    </div>
                 </div>
-            </div>
-                <button className='btn-primary' onClick={() => this.continue()}>Continue</button>
             </div>
         )
     }

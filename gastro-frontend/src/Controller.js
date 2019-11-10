@@ -24,7 +24,7 @@ class _Controller {
             params: {
                 art: art
             }
-        }).then(res => res.data);
+        }).then(res => res.data)
     }
 
     postProfileGeneral(id, art) {
@@ -35,7 +35,7 @@ class _Controller {
     }
 
     getProfileFood() {
-        return axios.get(this.profileFoodUrl).then(res => res.body);
+        return axios.get(this.profileFoodUrl).then(res => res.data);
     }
 
     postProfileFood(id, fav) {
@@ -50,7 +50,7 @@ class _Controller {
             params: {
                 cnt: cnt
             }
-        }).then(res => res.body);
+        }).then(res => res.data);
     }
 
     postQuestion(id, answerId) {
@@ -61,10 +61,10 @@ class _Controller {
     }
 
     getResults() {
-        return axios.get(this.resultsUrl).then(res => res.body);
+        return axios.get(this.resultsUrl).then(res => res.data);
     }
     getRestaurant() {
-        return axios.get(this.restauerantUrl).then(res => res.body);
+        return axios.get(this.restauerantUrl).then(res => res.data);
     }
 }
 
