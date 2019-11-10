@@ -39,9 +39,10 @@ class Interragation extends React.Component {
                 <h1>Question : {QuestionStore.id} </h1>
                 <div className="card" >
                     <div className="card-body">
-                        <p>{QuestionStore.question}</p>
-                        <a className="btn btn-light" onClick={() => this.send(0)}>{QuestionStore.answer[0]}</a>
-                        <a className="btn btn-light" onClick={() => this.send(0)}>{QuestionStore.answer[1]}</a>
+                        <h2>{QuestionStore.question}</h2>
+                        <br></br>
+                        <a className="btn btn-light col-5" onClick={() => this.send(0)}>{QuestionStore.answer[0]}</a>
+                        <a className="btn btn-light col-5 offset-2" onClick={() => this.send(0)}>{QuestionStore.answer[1]}</a>
                     </div>
                 </div>
             </div>
