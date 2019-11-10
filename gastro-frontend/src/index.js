@@ -8,11 +8,13 @@ import QuestionStore from './Stores/QuestionStore'
 import UserProfileStore from './Stores/UserProfileStore'
 import {Provider} from "mobx-react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ImageStore from "./Stores/ImageStore";
 
 const stores = {
     MainComponentStore,
     QuestionStore,
     UserProfileStore,
+    ImageStore,
 };
 
 
